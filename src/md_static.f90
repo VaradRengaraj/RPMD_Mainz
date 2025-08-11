@@ -107,7 +107,7 @@ subroutine md_static_prepare_traj(nb,pt,pb,print,reftraj,printNPT,printMSD)
         end do
         if (print_set_element(4))then
             worked = fh_mol_dipole%open(STATUS=file_status,ACTION='write',&
-            POSITION='file_position')
+            POSITION=file_position)
         endif
     endif
     !-----------------------------------------------
