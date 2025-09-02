@@ -337,6 +337,7 @@ endif
 66  format(1x,'<PE> = ',f10.4,' Kj/mol')
 
     deallocate (ct,dct,rmtr,irmtr,rmtv,irmtv,dmtr,idmtr,dmtv,idmtv,dmo1,dmot1)
+    deallocate (cvinter,dcvinter,cvintra,dcvintra,cke,dke,ihhh,ihoo,ihoh)
 #ifdef PARALLEL_BINDING
 endif
 #endif

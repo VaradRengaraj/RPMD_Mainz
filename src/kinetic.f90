@@ -240,6 +240,7 @@ subroutine kinetic_acmd(p,na,tk,rmass,nb,beta,om)
         endif
      enddo
   enddo
+  deallocate (ptemp)
   
   return
 end subroutine kinetic_acmd
